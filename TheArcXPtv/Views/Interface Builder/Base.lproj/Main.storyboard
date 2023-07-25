@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="19529" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0n6-aR-GbV">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Loading Screen View Controller-->
+        <scene sceneID="l3j-vN-IPc">
+            <objects>
+                <viewController id="0n6-aR-GbV" customClass="LoadingScreenViewController" customModule="TheArcXPtv" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iIN-bd-bnm"/>
+                        <viewControllerLayoutGuide type="bottom" id="TWN-g1-bz7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="piw-Df-IqH">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arc XP Logo White Circle" translatesAutoresizingMaskIntoConstraints="NO" id="LrB-EQ-6PP">
+                                <rect key="frame" x="810" y="390" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Q7n-j5-Wad"/>
+                                    <constraint firstAttribute="width" constant="300" id="rxA-ar-xIr"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="fNm-3z-sUi">
+                                <rect key="frame" x="928" y="890" width="64" height="64"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HHK-EW-Tyu"/>
+                        <color key="backgroundColor" red="0.0" green="0.13333333333333333" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fNm-3z-sUi" firstAttribute="centerX" secondItem="piw-Df-IqH" secondAttribute="centerX" id="45z-7v-e2F"/>
+                            <constraint firstItem="fNm-3z-sUi" firstAttribute="top" secondItem="LrB-EQ-6PP" secondAttribute="bottom" constant="200" id="7vn-BG-Cs1"/>
+                            <constraint firstItem="LrB-EQ-6PP" firstAttribute="centerY" secondItem="piw-Df-IqH" secondAttribute="centerY" id="qru-YB-hEu"/>
+                            <constraint firstItem="LrB-EQ-6PP" firstAttribute="centerX" secondItem="piw-Df-IqH" secondAttribute="centerX" id="wy5-3O-9kz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vwq-ZO-sdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7622" y="2626"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="TheArcXPtv" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="1kc-TQ-uqn">
+                                <rect key="frame" x="0.0" y="-75" width="1920" height="1155"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1kc-TQ-uqn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-75" id="Fx3-7I-e7X"/>
+                            <constraint firstAttribute="bottom" secondItem="1kc-TQ-uqn" secondAttribute="bottom" id="L13-0w-cco"/>
+                            <constraint firstItem="1kc-TQ-uqn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UI1-Hm-czm"/>
+                            <constraint firstAttribute="trailing" secondItem="1kc-TQ-uqn" secondAttribute="trailing" id="rV6-Ee-TEa"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="n9u-xw-5mn"/>
+                    <connections>
+                        <outlet property="tableView" destination="1kc-TQ-uqn" id="6uc-Ed-heh"/>
+                        <segue destination="po3-7g-7M3" kind="show" identifier="VideoDetailSegueID" id="2rb-m0-Qci"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2935" y="2626"/>
+        </scene>
+        <!--Video Detail View Controller-->
+        <scene sceneID="Od9-5V-nnq">
+            <objects>
+                <viewController storyboardIdentifier="VideoDetailViewController" id="po3-7g-7M3" customClass="VideoDetailViewController" customModule="TheArcXPtv" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lc7-0x-QHJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="NJ1-iw-NXE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zrs-hx-bYh">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="A2S-nI-lvq">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3iN-zS-eJJ"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="A2S-nI-lvq" secondAttribute="trailing" id="KIO-cn-0SQ"/>
+                            <constraint firstItem="A2S-nI-lvq" firstAttribute="top" secondItem="Zrs-hx-bYh" secondAttribute="top" id="UaY-Kv-6Kz"/>
+                            <constraint firstItem="A2S-nI-lvq" firstAttribute="leading" secondItem="Zrs-hx-bYh" secondAttribute="leading" id="Wmn-MS-jBz"/>
+                            <constraint firstAttribute="bottom" secondItem="A2S-nI-lvq" secondAttribute="bottom" id="vsR-te-DPp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6i0-M5-2se"/>
+                    <connections>
+                        <outlet property="tableView" destination="A2S-nI-lvq" id="GIL-uA-Zhi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MMp-zS-ISE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2935" y="4238"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="CLq-po-HFD">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" id="Wa8-nQ-XBl" customClass="SettingsViewController" customModule="TheArcXPtv" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m92-0p-rhJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="T2A-u9-o9m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hT4-0b-phF">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="6tq-nv-mNQ">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Slr-eN-NkN"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="6tq-nv-mNQ" secondAttribute="bottom" id="9pR-Fv-Ikz"/>
+                            <constraint firstAttribute="trailing" secondItem="6tq-nv-mNQ" secondAttribute="trailing" id="AJS-AH-ETs"/>
+                            <constraint firstItem="6tq-nv-mNQ" firstAttribute="top" secondItem="hT4-0b-phF" secondAttribute="top" id="U5U-gO-HYi"/>
+                            <constraint firstItem="6tq-nv-mNQ" firstAttribute="leading" secondItem="hT4-0b-phF" secondAttribute="leading" id="zTo-L6-I1Y"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" id="6z3-Re-aFR"/>
+                    <connections>
+                        <outlet property="tableView" destination="6tq-nv-mNQ" id="hIL-jE-ADb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KWP-sL-Zht" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-370" y="2626"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hwa-wp-amq">
+            <objects>
+                <tabBarController id="taC-Pk-kgC" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6sC-V4-iQN">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="0.0"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qOt-5R-9MB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5246" y="2626"/>
+        </scene>
+        <!--Video Player View Controller-->
+        <scene sceneID="sAc-H1-Rgl">
+            <objects>
+                <viewController storyboardIdentifier="VideoPlayerViewController" id="HbE-kC-BWv" customClass="VideoPlayerViewController" customModule="TheArcXPtv" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iRO-7G-Cqd"/>
+                        <viewControllerLayoutGuide type="bottom" id="EaS-RP-HPk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HKn-g7-d1T">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aTE-Vh-n7m"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXR-dA-bH4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2935" y="5842"/>
+        </scene>
+        <!--Text Detail View Controller-->
+        <scene sceneID="V0P-2e-r4S">
+            <objects>
+                <viewController storyboardIdentifier="TextDetailViewController" id="b1B-lT-2xP" customClass="TextDetailViewController" customModule="TheArcXPtv" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PRU-rf-SMB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Whv-uy-HEe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0OE-wH-jb0">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxC-31-Hlx">
+                                <rect key="frame" x="906.5" y="60" width="107" height="69"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nuo-tN-YYh">
+                                <rect key="frame" x="480" y="145" width="960" height="875"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1D1-dR-FC7"/>
+                        <constraints>
+                            <constraint firstItem="XxC-31-Hlx" firstAttribute="top" secondItem="1D1-dR-FC7" secondAttribute="top" id="1q7-aJ-uUq"/>
+                            <constraint firstItem="Nuo-tN-YYh" firstAttribute="top" secondItem="XxC-31-Hlx" secondAttribute="bottom" constant="16" id="37b-vm-9m5"/>
+                            <constraint firstItem="XxC-31-Hlx" firstAttribute="centerX" secondItem="0OE-wH-jb0" secondAttribute="centerX" id="fRA-pR-blE"/>
+                            <constraint firstItem="1D1-dR-FC7" firstAttribute="bottom" secondItem="Nuo-tN-YYh" secondAttribute="bottom" id="lRX-gY-Lod"/>
+                            <constraint firstItem="Nuo-tN-YYh" firstAttribute="width" secondItem="0OE-wH-jb0" secondAttribute="width" multiplier="0.5" id="nIa-pe-4Vd"/>
+                            <constraint firstItem="Nuo-tN-YYh" firstAttribute="centerX" secondItem="0OE-wH-jb0" secondAttribute="centerX" id="zaM-Sm-gNS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Inl-nW-wwV"/>
+                    <connections>
+                        <outlet property="textView" destination="Nuo-tN-YYh" id="5Gn-zR-IZ9"/>
+                        <outlet property="titleLabel" destination="XxC-31-Hlx" id="Ji8-4G-PEU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOX-7O-6cM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-370" y="4238"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Arc XP Logo White Circle" width="301" height="300"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

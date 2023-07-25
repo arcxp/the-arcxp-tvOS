@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="21507" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="798" id="fBs-An-CcD" customClass="VideoDetailTableViewCell" customModule="TheArcXPtv" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1428" height="790"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fBs-An-CcD" id="S0Q-fX-qc8">
+                <rect key="frame" x="0.0" y="0.0" width="1428" height="790"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXM-mE-9A7">
+                        <rect key="frame" x="125" y="176" width="362" height="90"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="75"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hCO-rd-mtM">
+                        <rect key="frame" x="125" y="296" width="1178" height="10"/>
+                    </progressView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8B0-cb-lvW" userLabel="Left Detail Labels">
+                        <rect key="frame" x="125" y="380" width="1178" height="319"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3D-Mp-AB7">
+                                <rect key="frame" x="0.0" y="0.0" width="1178" height="126"/>
+                                <string key="text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. </string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klO-vJ-bgc">
+                                <rect key="frame" x="0.0" y="228" width="217" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="91o-gL-80L"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Resume">
+                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="playVideo:" destination="fBs-An-CcD" eventType="primaryActionTriggered" id="vFs-nX-1Uz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 hr 30 min • September 1, 2022 • ArcXP" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="919-yk-0QC">
+                                <rect key="frame" x="0.0" y="142" width="1178" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDB-kl-YtK">
+                                <rect key="frame" x="257" y="228" width="202" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="1cu-eU-pSh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="61b-ZN-er3"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Restart">
+                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="playVideo:" destination="fBs-An-CcD" eventType="primaryActionTriggered" id="Khm-oW-R5u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="X3D-Mp-AB7" firstAttribute="leading" secondItem="8B0-cb-lvW" secondAttribute="leading" id="0zf-Hn-mzT"/>
+                            <constraint firstItem="mDB-kl-YtK" firstAttribute="leading" secondItem="klO-vJ-bgc" secondAttribute="trailing" constant="40" id="7UB-rj-8eD"/>
+                            <constraint firstItem="919-yk-0QC" firstAttribute="leading" secondItem="8B0-cb-lvW" secondAttribute="leading" id="CZr-Gb-e7Q"/>
+                            <constraint firstItem="919-yk-0QC" firstAttribute="top" secondItem="X3D-Mp-AB7" secondAttribute="bottom" constant="16" id="Cjt-H9-ywv"/>
+                            <constraint firstAttribute="trailing" secondItem="919-yk-0QC" secondAttribute="trailing" id="Ep5-sN-hYr"/>
+                            <constraint firstItem="X3D-Mp-AB7" firstAttribute="top" secondItem="8B0-cb-lvW" secondAttribute="top" id="Qts-mB-BlT"/>
+                            <constraint firstItem="mDB-kl-YtK" firstAttribute="top" secondItem="919-yk-0QC" secondAttribute="bottom" constant="50" id="UG5-WX-7TV"/>
+                            <constraint firstAttribute="bottom" secondItem="klO-vJ-bgc" secondAttribute="bottom" constant="16" id="VSb-Eh-89G"/>
+                            <constraint firstItem="klO-vJ-bgc" firstAttribute="top" secondItem="919-yk-0QC" secondAttribute="bottom" constant="50" id="fAi-VQ-0X0"/>
+                            <constraint firstAttribute="trailing" secondItem="X3D-Mp-AB7" secondAttribute="trailing" id="jKm-eU-wAC"/>
+                            <constraint firstItem="klO-vJ-bgc" firstAttribute="leading" secondItem="8B0-cb-lvW" secondAttribute="leading" id="uqy-lb-Pl3"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:05:12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2O-cg-8dx">
+                        <rect key="frame" x="125" y="322" width="119" height="42"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8B0-cb-lvW" secondAttribute="trailing" constant="125" id="CSH-Ar-UAl"/>
+                    <constraint firstAttribute="bottom" secondItem="8B0-cb-lvW" secondAttribute="bottom" constant="91" id="CtT-h1-HCN"/>
+                    <constraint firstItem="8B0-cb-lvW" firstAttribute="trailing" secondItem="hCO-rd-mtM" secondAttribute="trailing" id="Gam-7Q-Nqv"/>
+                    <constraint firstItem="8B0-cb-lvW" firstAttribute="leading" secondItem="kXM-mE-9A7" secondAttribute="leading" id="L0J-JU-DO3"/>
+                    <constraint firstItem="hCO-rd-mtM" firstAttribute="bottom" secondItem="kXM-mE-9A7" secondAttribute="bottom" constant="40" id="MQP-Ww-tmo"/>
+                    <constraint firstItem="8B0-cb-lvW" firstAttribute="leading" secondItem="hCO-rd-mtM" secondAttribute="leading" id="QRe-j2-QCr"/>
+                    <constraint firstItem="8B0-cb-lvW" firstAttribute="top" secondItem="X2O-cg-8dx" secondAttribute="bottom" constant="16" id="Tnd-ow-yYy"/>
+                    <constraint firstItem="8B0-cb-lvW" firstAttribute="leading" secondItem="S0Q-fX-qc8" secondAttribute="leading" constant="125" id="gef-i0-t4X"/>
+                    <constraint firstItem="X2O-cg-8dx" firstAttribute="leading" secondItem="kXM-mE-9A7" secondAttribute="leading" id="hHK-DK-3yt"/>
+                    <constraint firstItem="X2O-cg-8dx" firstAttribute="top" secondItem="hCO-rd-mtM" secondAttribute="bottom" constant="16" id="oV9-Xh-Ye6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="1ks-Xo-ai1"/>
+            <connections>
+                <outlet property="leftDetailLabels" destination="8B0-cb-lvW" id="DeJ-Pc-hvL"/>
+                <outlet property="playButton" destination="klO-vJ-bgc" id="nRW-rP-2Mc"/>
+                <outlet property="progressIndicator" destination="hCO-rd-mtM" id="9Cc-dy-IJ1"/>
+                <outlet property="publisherAndDateLabel" destination="919-yk-0QC" id="TYn-Rl-vv0"/>
+                <outlet property="restartButton" destination="mDB-kl-YtK" id="Yyc-ol-9XY"/>
+                <outlet property="resumeTimeLabel" destination="X2O-cg-8dx" id="ahL-0e-geG"/>
+                <outlet property="videoDescriptionLabel" destination="X3D-Mp-AB7" id="fGg-2k-Buz"/>
+                <outlet property="videoTitleLabel" destination="kXM-mE-9A7" id="5kq-Tg-RnO"/>
+            </connections>
+            <point key="canvasLocation" x="-50" y="439"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

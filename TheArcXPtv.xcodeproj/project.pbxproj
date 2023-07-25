@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A087BF428C9753C0097C169 /* VideoListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A087BF228C9753C0097C169 /* VideoListCollectionViewCell.swift */; };
+		9A087BF528C9753C0097C169 /* VideoListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A087BF328C9753C0097C169 /* VideoListCollectionViewCell.xib */; };
+		9A087BF728C976CF0097C169 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A087BF628C976CF0097C169 /* Video.swift */; };
+		9A1A921028C99A4D0069CF8C /* VideoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A920E28C99A4D0069CF8C /* VideoListTableViewCell.swift */; };
+		9A1A921128C99A4D0069CF8C /* VideoListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1A920F28C99A4D0069CF8C /* VideoListTableViewCell.xib */; };
+		9A1A921328C9D2370069CF8C /* VideoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A921228C9D2370069CF8C /* VideoDetailViewController.swift */; };
+		9A1A921628D1AFD60069CF8C /* VideoDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A921428D1AFD60069CF8C /* VideoDetailTableViewCell.swift */; };
+		9A1A921728D1AFD60069CF8C /* VideoDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1A921528D1AFD60069CF8C /* VideoDetailTableViewCell.xib */; };
+		9A4A8C002901D37C00602D07 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A8BFF2901D37C00602D07 /* GradientView.swift */; };
+		9A4A8C022907D8ED00602D07 /* VideoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A8C012907D8ED00602D07 /* VideoListItem.swift */; };
+		9A4A8C052907D9B900602D07 /* VideoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A8C042907D9B900602D07 /* VideoDetail.swift */; };
+		9A4A8C072907DC0300602D07 /* ArcXPContent+TheArcXPtv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A8C062907DC0300602D07 /* ArcXPContent+TheArcXPtv.swift */; };
+		9A4A8C092909817D00602D07 /* LiveEvent+TheArcXPtv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A8C082909817D00602D07 /* LiveEvent+TheArcXPtv.swift */; };
+		9A648E2528EE64E400F90C64 /* HeroSectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A648E2328EE64E400F90C64 /* HeroSectionCollectionViewCell.swift */; };
+		9A648E2628EE64E400F90C64 /* HeroSectionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A648E2428EE64E400F90C64 /* HeroSectionCollectionViewCell.xib */; };
+		9A79F81128D2812D00A4A670 /* SoftwareVersionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A79F80F28D2812D00A4A670 /* SoftwareVersionsTableViewCell.swift */; };
+		9A79F81228D2812D00A4A670 /* SoftwareVersionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A79F81028D2812D00A4A670 /* SoftwareVersionsTableViewCell.xib */; };
+		9A79F81428D28E6000A4A670 /* TextDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A79F81328D28E6000A4A670 /* TextDetailViewController.swift */; };
+		9A8F354A2980E1180050B2D6 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F35492980E1180050B2D6 /* ThemeManager.swift */; };
+		9AB275902936558C00ABE154 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9AB2758F2936558C00ABE154 /* SDWebImage */; };
+		9AB275942939423600ABE154 /* UITableViewCell+TheArcXPtv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB275932939423600ABE154 /* UITableViewCell+TheArcXPtv.swift */; };
+		9ABC79FE2914572100FE8ECA /* Bundle+TheArcXPtv.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B4CE72912BBB700E0291E /* Bundle+TheArcXPtv.swift */; };
+		9AE45013291C3511005BE644 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45012291C3511005BE644 /* CacheManager.swift */; };
+		9AE8487429247738007170A4 /* LoadingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8487329247738007170A4 /* LoadingScreenViewController.swift */; };
+		9AE84876292488F8007170A4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE84875292488F8007170A4 /* MainTabBarController.swift */; };
+		9AE84882292F63ED007170A4 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE84881292F63ED007170A4 /* CoreDataController.swift */; };
+		9D17F8FE29D3449E00E8291E /* ArcXP in Frameworks */ = {isa = PBXBuildFile; productRef = 9D17F8FD29D3449E00E8291E /* ArcXP */; };
+		9D3161F728EE8674001FD22D /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3161F528EE8674001FD22D /* VideoPlayerViewController.swift */; };
+		9D3161FD28EF3128001FD22D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3161FC28EF3128001FD22D /* Utils.swift */; };
+		9D31620228F61C6F001FD22D /* UserDefaults+TheArcXPtv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31620128F61C6F001FD22D /* UserDefaults+TheArcXPtv.swift */; };
+		9D31620528F65C0F001FD22D /* UIViewController+TheArcXPtv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31620428F65C0F001FD22D /* UIViewController+TheArcXPtv.swift */; };
+		9DA993D728DCD80600ABC334 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA993D628DCD80600ABC334 /* Constants.swift */; };
+		9DA993D928DCD80C00ABC334 /* ContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA993D828DCD80C00ABC334 /* ContentProvider.swift */; };
+		A520F09028B423190071DB76 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520F08F28B423190071DB76 /* HomeViewController.swift */; };
+		A5397BE3291B0BE100752D65 /* String+HTMLText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397BE2291B0BE100752D65 /* String+HTMLText.swift */; };
+		A54FB77128B7C4D600F27075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54FB77028B7C4D600F27075 /* AppDelegate.swift */; };
+		A54FB77628B7C4D600F27075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54FB77428B7C4D600F27075 /* Main.storyboard */; };
+		A54FB77828B7C4D700F27075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54FB77728B7C4D700F27075 /* Assets.xcassets */; };
+		A54FB77B28B7C4D700F27075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54FB77928B7C4D700F27075 /* LaunchScreen.storyboard */; };
+		A54FB78828B91E5A00F27075 /* TheArcXPtvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54FB78728B91E5A00F27075 /* TheArcXPtvTests.swift */; };
+		A57B9FD828D902C0005C7649 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57B9FD728D902C0005C7649 /* SearchResultsController.swift */; };
+		A5A16C22298326B70091B5B8 /* TheArcXPTV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5A16C20298326B70091B5B8 /* TheArcXPTV.xcdatamodeld */; };
+		A5A16C25298441E50091B5B8 /* UserFacingStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A16C24298441E50091B5B8 /* UserFacingStrings.swift */; };
+		A5A16C27298C08E90091B5B8 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A16C26298C08E90091B5B8 /* String+Localized.swift */; };
+		A5B1683C28CF968F00CE12DE /* Themes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5B1683B28CF968F00CE12DE /* Themes.xcassets */; };
+		A5B1683E28CFD0DB00CE12DE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B1683D28CFD0DB00CE12DE /* SettingsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A54FB78928B91E5A00F27075 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A54FB76528B7C4D600F27075 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A54FB76C28B7C4D600F27075;
+			remoteInfo = TheArcXPtv;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A087BF228C9753C0097C169 /* VideoListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A087BF328C9753C0097C169 /* VideoListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoListCollectionViewCell.xib; sourceTree = "<group>"; };
+		9A087BF628C976CF0097C169 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		9A1A920E28C99A4D0069CF8C /* VideoListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListTableViewCell.swift; sourceTree = "<group>"; };
+		9A1A920F28C99A4D0069CF8C /* VideoListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoListTableViewCell.xib; sourceTree = "<group>"; };
+		9A1A921228C9D2370069CF8C /* VideoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailViewController.swift; sourceTree = "<group>"; };
+		9A1A921428D1AFD60069CF8C /* VideoDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailTableViewCell.swift; sourceTree = "<group>"; };
+		9A1A921528D1AFD60069CF8C /* VideoDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoDetailTableViewCell.xib; sourceTree = "<group>"; };
+		9A4A8BFF2901D37C00602D07 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		9A4A8C012907D8ED00602D07 /* VideoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItem.swift; sourceTree = "<group>"; };
+		9A4A8C042907D9B900602D07 /* VideoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetail.swift; sourceTree = "<group>"; };
+		9A4A8C062907DC0300602D07 /* ArcXPContent+TheArcXPtv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArcXPContent+TheArcXPtv.swift"; sourceTree = "<group>"; };
+		9A4A8C082909817D00602D07 /* LiveEvent+TheArcXPtv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LiveEvent+TheArcXPtv.swift"; sourceTree = "<group>"; };
+		9A648E2328EE64E400F90C64 /* HeroSectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroSectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A648E2428EE64E400F90C64 /* HeroSectionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroSectionCollectionViewCell.xib; sourceTree = "<group>"; };
+		9A79F80F28D2812D00A4A670 /* SoftwareVersionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareVersionsTableViewCell.swift; sourceTree = "<group>"; };
+		9A79F81028D2812D00A4A670 /* SoftwareVersionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoftwareVersionsTableViewCell.xib; sourceTree = "<group>"; };
+		9A79F81328D28E6000A4A670 /* TextDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDetailViewController.swift; sourceTree = "<group>"; };
+		9A8F35492980E1180050B2D6 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		9AB275932939423600ABE154 /* UITableViewCell+TheArcXPtv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+TheArcXPtv.swift"; sourceTree = "<group>"; };
+		9AE45012291C3511005BE644 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		9AE8487329247738007170A4 /* LoadingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenViewController.swift; sourceTree = "<group>"; };
+		9AE84875292488F8007170A4 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		9AE84881292F63ED007170A4 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		9D3161F528EE8674001FD22D /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		9D3161FC28EF3128001FD22D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		9D31620128F61C6F001FD22D /* UserDefaults+TheArcXPtv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+TheArcXPtv.swift"; sourceTree = "<group>"; };
+		9D31620428F65C0F001FD22D /* UIViewController+TheArcXPtv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+TheArcXPtv.swift"; sourceTree = "<group>"; };
+		9D857F2028E758C100A65832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DA993D628DCD80600ABC334 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9DA993D828DCD80C00ABC334 /* ContentProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentProvider.swift; sourceTree = "<group>"; };
+		A520F08F28B423190071DB76 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A5397BE2291B0BE100752D65 /* String+HTMLText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTMLText.swift"; sourceTree = "<group>"; };
+		A54FB76D28B7C4D600F27075 /* TheArcXPtv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheArcXPtv.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54FB77028B7C4D600F27075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A54FB77528B7C4D600F27075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A54FB77728B7C4D700F27075 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A54FB77A28B7C4D700F27075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A54FB78528B91E5A00F27075 /* TheArcXPtvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheArcXPtvTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54FB78728B91E5A00F27075 /* TheArcXPtvTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheArcXPtvTests.swift; sourceTree = "<group>"; };
+		A55B4CE72912BBB700E0291E /* Bundle+TheArcXPtv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+TheArcXPtv.swift"; sourceTree = "<group>"; };
+		A57B9FD728D902C0005C7649 /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
+		A5A16C21298326B70091B5B8 /* TheArcXPTV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheArcXPTV.xcdatamodel; sourceTree = "<group>"; };
+		A5A16C23298327800091B5B8 /* TheArcXPTV v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "TheArcXPTV v2.xcdatamodel"; sourceTree = "<group>"; };
+		A5A16C24298441E50091B5B8 /* UserFacingStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFacingStrings.swift; sourceTree = "<group>"; };
+		A5A16C26298C08E90091B5B8 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		A5B1683B28CF968F00CE12DE /* Themes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Themes.xcassets; sourceTree = "<group>"; };
+		A5B1683D28CFD0DB00CE12DE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A54FB76A28B7C4D600F27075 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB275902936558C00ABE154 /* SDWebImage in Frameworks */,
+				9D17F8FE29D3449E00E8291E /* ArcXP in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54FB78228B91E5A00F27075 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A087BEC28C973EA0097C169 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A8BFF2901D37C00602D07 /* GradientView.swift */,
+				9A087BF128C974E30097C169 /* Cells */,
+				9A087BF028C974AF0097C169 /* Interface Builder */,
+				9A087BEF28C974990097C169 /* View Controllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A087BEE28C974080097C169 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5A16C20298326B70091B5B8 /* TheArcXPTV.xcdatamodeld */,
+				9A087BF628C976CF0097C169 /* Video.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9A087BEF28C974990097C169 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A520F08F28B423190071DB76 /* HomeViewController.swift */,
+				9AE8487329247738007170A4 /* LoadingScreenViewController.swift */,
+				9AE84875292488F8007170A4 /* MainTabBarController.swift */,
+				A57B9FD728D902C0005C7649 /* SearchResultsController.swift */,
+				A5B1683D28CFD0DB00CE12DE /* SettingsViewController.swift */,
+				9A79F81328D28E6000A4A670 /* TextDetailViewController.swift */,
+				9A1A921228C9D2370069CF8C /* VideoDetailViewController.swift */,
+				9D3161F528EE8674001FD22D /* VideoPlayerViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9A087BF028C974AF0097C169 /* Interface Builder */ = {
+			isa = PBXGroup;
+			children = (
+				A54FB77928B7C4D700F27075 /* LaunchScreen.storyboard */,
+				A54FB77428B7C4D600F27075 /* Main.storyboard */,
+			);
+			path = "Interface Builder";
+			sourceTree = "<group>";
+		};
+		9A087BF128C974E30097C169 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9A648E2328EE64E400F90C64 /* HeroSectionCollectionViewCell.swift */,
+				9A648E2428EE64E400F90C64 /* HeroSectionCollectionViewCell.xib */,
+				9A79F80F28D2812D00A4A670 /* SoftwareVersionsTableViewCell.swift */,
+				9A79F81028D2812D00A4A670 /* SoftwareVersionsTableViewCell.xib */,
+				9A1A921428D1AFD60069CF8C /* VideoDetailTableViewCell.swift */,
+				9A1A921528D1AFD60069CF8C /* VideoDetailTableViewCell.xib */,
+				9A087BF228C9753C0097C169 /* VideoListCollectionViewCell.swift */,
+				9A087BF328C9753C0097C169 /* VideoListCollectionViewCell.xib */,
+				9A1A920E28C99A4D0069CF8C /* VideoListTableViewCell.swift */,
+				9A1A920F28C99A4D0069CF8C /* VideoListTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9A4A8BFE2900793D00602D07 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9DA993D828DCD80C00ABC334 /* ContentProvider.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9A4A8C032907D90200602D07 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A8C042907D9B900602D07 /* VideoDetail.swift */,
+				9A4A8C012907D8ED00602D07 /* VideoListItem.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		9D31620328F65BD4001FD22D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A8C062907DC0300602D07 /* ArcXPContent+TheArcXPtv.swift */,
+				A55B4CE72912BBB700E0291E /* Bundle+TheArcXPtv.swift */,
+				9A4A8C082909817D00602D07 /* LiveEvent+TheArcXPtv.swift */,
+				9D31620428F65C0F001FD22D /* UIViewController+TheArcXPtv.swift */,
+				9D31620128F61C6F001FD22D /* UserDefaults+TheArcXPtv.swift */,
+				A5397BE2291B0BE100752D65 /* String+HTMLText.swift */,
+				9AB275932939423600ABE154 /* UITableViewCell+TheArcXPtv.swift */,
+				A5A16C26298C08E90091B5B8 /* String+Localized.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A54FB76428B7C4D600F27075 = {
+			isa = PBXGroup;
+			children = (
+				A54FB76F28B7C4D600F27075 /* TheArcXPtv */,
+				A54FB78628B91E5A00F27075 /* TheArcXPtvTests */,
+				A54FB76E28B7C4D600F27075 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A54FB76E28B7C4D600F27075 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A54FB76D28B7C4D600F27075 /* TheArcXPtv.app */,
+				A54FB78528B91E5A00F27075 /* TheArcXPtvTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A54FB76F28B7C4D600F27075 /* TheArcXPtv */ = {
+			isa = PBXGroup;
+			children = (
+				A54FB77028B7C4D600F27075 /* AppDelegate.swift */,
+				9A087BEE28C974080097C169 /* Models */,
+				9A087BEC28C973EA0097C169 /* Views */,
+				9A4A8C032907D90200602D07 /* View Models */,
+				A5E5810928E49A6500440036 /* Utilities */,
+				9D31620328F65BD4001FD22D /* Extensions */,
+				A54FB77728B7C4D700F27075 /* Assets.xcassets */,
+				A5B1683B28CF968F00CE12DE /* Themes.xcassets */,
+				9D857F2028E758C100A65832 /* Info.plist */,
+			);
+			path = TheArcXPtv;
+			sourceTree = "<group>";
+		};
+		A54FB78628B91E5A00F27075 /* TheArcXPtvTests */ = {
+			isa = PBXGroup;
+			children = (
+				A54FB78728B91E5A00F27075 /* TheArcXPtvTests.swift */,
+			);
+			path = TheArcXPtvTests;
+			sourceTree = "<group>";
+		};
+		A5E5810928E49A6500440036 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A8BFE2900793D00602D07 /* Networking */,
+				9AE45012291C3511005BE644 /* CacheManager.swift */,
+				9DA993D628DCD80600ABC334 /* Constants.swift */,
+				9AE84881292F63ED007170A4 /* CoreDataController.swift */,
+				9A8F35492980E1180050B2D6 /* ThemeManager.swift */,
+				9D3161FC28EF3128001FD22D /* Utils.swift */,
+				A5A16C24298441E50091B5B8 /* UserFacingStrings.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A54FB76C28B7C4D600F27075 /* TheArcXPtv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A54FB77E28B7C4D700F27075 /* Build configuration list for PBXNativeTarget "TheArcXPtv" */;
+			buildPhases = (
+				A54FB76928B7C4D600F27075 /* Sources */,
+				A54FB76A28B7C4D600F27075 /* Frameworks */,
+				A54FB76B28B7C4D600F27075 /* Resources */,
+				9D3161FB28EF1F8D001FD22D /* swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheArcXPtv;
+			packageProductDependencies = (
+				9AB2758F2936558C00ABE154 /* SDWebImage */,
+				9D17F8FD29D3449E00E8291E /* ArcXP */,
+			);
+			productName = TheArcXPtv;
+			productReference = A54FB76D28B7C4D600F27075 /* TheArcXPtv.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A54FB78428B91E5A00F27075 /* TheArcXPtvTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A54FB78B28B91E5A00F27075 /* Build configuration list for PBXNativeTarget "TheArcXPtvTests" */;
+			buildPhases = (
+				A54FB78128B91E5A00F27075 /* Sources */,
+				A54FB78228B91E5A00F27075 /* Frameworks */,
+				A54FB78328B91E5A00F27075 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A54FB78A28B91E5A00F27075 /* PBXTargetDependency */,
+			);
+			name = TheArcXPtvTests;
+			productName = TheArcXPtvTests;
+			productReference = A54FB78528B91E5A00F27075 /* TheArcXPtvTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A54FB76528B7C4D600F27075 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				ORGANIZATIONNAME = "Arc XP";
+				TargetAttributes = {
+					A54FB76C28B7C4D600F27075 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A54FB78428B91E5A00F27075 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A54FB76C28B7C4D600F27075;
+					};
+				};
+			};
+			buildConfigurationList = A54FB76828B7C4D600F27075 /* Build configuration list for PBXProject "TheArcXPtv" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A54FB76428B7C4D600F27075;
+			packageReferences = (
+				9AB2758E2936558C00ABE154 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				9D17F8FC29D3449E00E8291E /* XCRemoteSwiftPackageReference "arcxpSDK-tvOS-package" */,
+			);
+			productRefGroup = A54FB76E28B7C4D600F27075 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A54FB76C28B7C4D600F27075 /* TheArcXPtv */,
+				A54FB78428B91E5A00F27075 /* TheArcXPtvTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A54FB76B28B7C4D600F27075 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1A921728D1AFD60069CF8C /* VideoDetailTableViewCell.xib in Resources */,
+				A54FB77B28B7C4D700F27075 /* LaunchScreen.storyboard in Resources */,
+				9A648E2628EE64E400F90C64 /* HeroSectionCollectionViewCell.xib in Resources */,
+				A5B1683C28CF968F00CE12DE /* Themes.xcassets in Resources */,
+				9A79F81228D2812D00A4A670 /* SoftwareVersionsTableViewCell.xib in Resources */,
+				A54FB77828B7C4D700F27075 /* Assets.xcassets in Resources */,
+				9A087BF528C9753C0097C169 /* VideoListCollectionViewCell.xib in Resources */,
+				A54FB77628B7C4D600F27075 /* Main.storyboard in Resources */,
+				9A1A921128C99A4D0069CF8C /* VideoListTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54FB78328B91E5A00F27075 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D3161FB28EF1F8D001FD22D /* swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A54FB76928B7C4D600F27075 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4A8C052907D9B900602D07 /* VideoDetail.swift in Sources */,
+				A520F09028B423190071DB76 /* HomeViewController.swift in Sources */,
+				9ABC79FE2914572100FE8ECA /* Bundle+TheArcXPtv.swift in Sources */,
+				9D31620528F65C0F001FD22D /* UIViewController+TheArcXPtv.swift in Sources */,
+				9DA993D728DCD80600ABC334 /* Constants.swift in Sources */,
+				9A79F81128D2812D00A4A670 /* SoftwareVersionsTableViewCell.swift in Sources */,
+				9D3161F728EE8674001FD22D /* VideoPlayerViewController.swift in Sources */,
+				9A1A921328C9D2370069CF8C /* VideoDetailViewController.swift in Sources */,
+				9AB275942939423600ABE154 /* UITableViewCell+TheArcXPtv.swift in Sources */,
+				9D31620228F61C6F001FD22D /* UserDefaults+TheArcXPtv.swift in Sources */,
+				9AE45013291C3511005BE644 /* CacheManager.swift in Sources */,
+				9AE84876292488F8007170A4 /* MainTabBarController.swift in Sources */,
+				9D3161FD28EF3128001FD22D /* Utils.swift in Sources */,
+				A57B9FD828D902C0005C7649 /* SearchResultsController.swift in Sources */,
+				A5A16C22298326B70091B5B8 /* TheArcXPTV.xcdatamodeld in Sources */,
+				9AE84882292F63ED007170A4 /* CoreDataController.swift in Sources */,
+				9A4A8C002901D37C00602D07 /* GradientView.swift in Sources */,
+				9A4A8C072907DC0300602D07 /* ArcXPContent+TheArcXPtv.swift in Sources */,
+				A5B1683E28CFD0DB00CE12DE /* SettingsViewController.swift in Sources */,
+				9A648E2528EE64E400F90C64 /* HeroSectionCollectionViewCell.swift in Sources */,
+				9A4A8C022907D8ED00602D07 /* VideoListItem.swift in Sources */,
+				9A79F81428D28E6000A4A670 /* TextDetailViewController.swift in Sources */,
+				A5397BE3291B0BE100752D65 /* String+HTMLText.swift in Sources */,
+				9A087BF728C976CF0097C169 /* Video.swift in Sources */,
+				9DA993D928DCD80C00ABC334 /* ContentProvider.swift in Sources */,
+				9A1A921628D1AFD60069CF8C /* VideoDetailTableViewCell.swift in Sources */,
+				A54FB77128B7C4D600F27075 /* AppDelegate.swift in Sources */,
+				9A8F354A2980E1180050B2D6 /* ThemeManager.swift in Sources */,
+				A5A16C27298C08E90091B5B8 /* String+Localized.swift in Sources */,
+				9AE8487429247738007170A4 /* LoadingScreenViewController.swift in Sources */,
+				9A087BF428C9753C0097C169 /* VideoListCollectionViewCell.swift in Sources */,
+				9A1A921028C99A4D0069CF8C /* VideoListTableViewCell.swift in Sources */,
+				A5A16C25298441E50091B5B8 /* UserFacingStrings.swift in Sources */,
+				9A4A8C092909817D00602D07 /* LiveEvent+TheArcXPtv.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54FB78128B91E5A00F27075 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54FB78828B91E5A00F27075 /* TheArcXPtvTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A54FB78A28B91E5A00F27075 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A54FB76C28B7C4D600F27075 /* TheArcXPtv */;
+			targetProxy = A54FB78928B91E5A00F27075 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A54FB77428B7C4D600F27075 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A54FB77528B7C4D600F27075 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A54FB77928B7C4D700F27075 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A54FB77A28B7C4D700F27075 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A54FB77C28B7C4D700F27075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = arm64;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 15.2;
+			};
+			name = Debug;
+		};
+		A54FB77D28B7C4D700F27075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = arm64;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 15.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A54FB77F28B7C4D700F27075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2829339WJT;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=appletvsimulator*]" = arm64;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TheArcXPtv/Info.plist;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.washingtonpost.arc.TheArcXPtv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		A54FB78028B7C4D700F27075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2829339WJT;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=appletvsimulator*]" = arm64;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TheArcXPtv/Info.plist;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.washingtonpost.arc.TheArcXPtv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		A54FB78C28B91E5A00F27075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2829339WJT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.washingtonpost.arc.TheArcXPtvTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheArcXPtv.app/TheArcXPtv";
+			};
+			name = Debug;
+		};
+		A54FB78D28B91E5A00F27075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2829339WJT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.washingtonpost.arc.TheArcXPtvTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheArcXPtv.app/TheArcXPtv";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A54FB76828B7C4D600F27075 /* Build configuration list for PBXProject "TheArcXPtv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54FB77C28B7C4D700F27075 /* Debug */,
+				A54FB77D28B7C4D700F27075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A54FB77E28B7C4D700F27075 /* Build configuration list for PBXNativeTarget "TheArcXPtv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54FB77F28B7C4D700F27075 /* Debug */,
+				A54FB78028B7C4D700F27075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A54FB78B28B91E5A00F27075 /* Build configuration list for PBXNativeTarget "TheArcXPtvTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54FB78C28B91E5A00F27075 /* Debug */,
+				A54FB78D28B91E5A00F27075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9AB2758E2936558C00ABE154 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		9D17F8FC29D3449E00E8291E /* XCRemoteSwiftPackageReference "arcxpSDK-tvOS-package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:arcxp/arcxpSDK-tvOS-package.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9AB2758F2936558C00ABE154 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9AB2758E2936558C00ABE154 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		9D17F8FD29D3449E00E8291E /* ArcXP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D17F8FC29D3449E00E8291E /* XCRemoteSwiftPackageReference "arcxpSDK-tvOS-package" */;
+			productName = ArcXP;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		A5A16C20298326B70091B5B8 /* TheArcXPTV.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A5A16C23298327800091B5B8 /* TheArcXPTV v2.xcdatamodel */,
+				A5A16C21298326B70091B5B8 /* TheArcXPTV.xcdatamodel */,
+			);
+			currentVersion = A5A16C23298327800091B5B8 /* TheArcXPTV v2.xcdatamodel */;
+			path = TheArcXPTV.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A54FB76528B7C4D600F27075 /* Project object */;
+}

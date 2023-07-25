@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="21507" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="Rz2-K0-ksD" customClass="VideoListCollectionViewCell" customModule="TheArcXPtv" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="280"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="280"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9KQ-Qz-c19">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="197"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="9KQ-Qz-c19" secondAttribute="height" multiplier="16:9" id="GXJ-T2-k1j"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cai-eW-7x6">
+                        <rect key="frame" x="0.0" y="217" width="350" height="55"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="34"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iop-ae-OK9" customClass="GradientView" customModule="TheArcXPtv" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="197"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="fnH-EG-v65">
+                        <rect key="frame" x="155" y="78.5" width="40" height="40"/>
+                    </activityIndicatorView>
+                    <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="0qP-jK-vwG">
+                        <rect key="frame" x="20" y="169" width="310" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="Exg-WY-PqP"/>
+                            <constraint firstAttribute="width" constant="310" id="ope-f6-CyX"/>
+                        </constraints>
+                    </progressView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="7PP-Ag-gPX"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9KQ-Qz-c19" secondAttribute="trailing" id="13Y-io-P4d"/>
+                <constraint firstItem="Cai-eW-7x6" firstAttribute="top" secondItem="0qP-jK-vwG" secondAttribute="bottom" constant="38" id="3fv-L7-vkz"/>
+                <constraint firstItem="0qP-jK-vwG" firstAttribute="centerX" secondItem="fnH-EG-v65" secondAttribute="centerX" id="8Ru-QM-vOf"/>
+                <constraint firstAttribute="trailing" secondItem="Cai-eW-7x6" secondAttribute="trailing" id="9GT-f5-M7G"/>
+                <constraint firstItem="fnH-EG-v65" firstAttribute="centerY" secondItem="9KQ-Qz-c19" secondAttribute="centerY" id="EA2-qI-bbA"/>
+                <constraint firstItem="0qP-jK-vwG" firstAttribute="top" secondItem="fnH-EG-v65" secondAttribute="bottom" constant="50.5" id="GlQ-3x-Aqf"/>
+                <constraint firstAttribute="bottom" secondItem="Cai-eW-7x6" secondAttribute="bottom" constant="8" id="I3A-gL-sVF"/>
+                <constraint firstItem="9KQ-Qz-c19" firstAttribute="top" secondItem="Rz2-K0-ksD" secondAttribute="top" id="Xxi-3P-WnC"/>
+                <constraint firstItem="Iop-ae-OK9" firstAttribute="leading" secondItem="Rz2-K0-ksD" secondAttribute="leading" id="YiB-if-isO"/>
+                <constraint firstItem="Cai-eW-7x6" firstAttribute="top" secondItem="9KQ-Qz-c19" secondAttribute="bottom" constant="20" id="bja-Zq-ocy"/>
+                <constraint firstItem="fnH-EG-v65" firstAttribute="leading" secondItem="9KQ-Qz-c19" secondAttribute="trailing" constant="-195" id="jBj-cP-ujh"/>
+                <constraint firstItem="9KQ-Qz-c19" firstAttribute="leading" secondItem="Rz2-K0-ksD" secondAttribute="leading" id="k1H-do-ESo"/>
+                <constraint firstItem="Iop-ae-OK9" firstAttribute="top" secondItem="Rz2-K0-ksD" secondAttribute="top" id="prB-Mh-DuA"/>
+                <constraint firstItem="Cai-eW-7x6" firstAttribute="leading" secondItem="Rz2-K0-ksD" secondAttribute="leading" id="tNu-Ye-pM9"/>
+                <constraint firstAttribute="trailing" secondItem="Iop-ae-OK9" secondAttribute="trailing" id="uAd-SK-3ox"/>
+                <constraint firstItem="Cai-eW-7x6" firstAttribute="top" secondItem="Iop-ae-OK9" secondAttribute="bottom" constant="20" id="wDh-x4-8JZ"/>
+            </constraints>
+            <size key="customSize" width="331" height="304"/>
+            <connections>
+                <outlet property="imageView" destination="9KQ-Qz-c19" id="NQr-GG-55q"/>
+                <outlet property="loadingIndicator" destination="fnH-EG-v65" id="lwt-If-tHO"/>
+                <outlet property="progressIndicator" destination="0qP-jK-vwG" id="HtR-zp-snO"/>
+                <outlet property="titleLabel" destination="Cai-eW-7x6" id="pV3-Qj-l6A"/>
+                <outlet property="videoListGradientView" destination="Iop-ae-OK9" id="DdI-mr-Km7"/>
+            </connections>
+            <point key="canvasLocation" x="327" y="200"/>
+        </collectionViewCell>
+    </objects>
+</document>
